@@ -3,6 +3,7 @@ namespace scenes {
     // member variables
     private _welcomeLabel: objects.Label;
     private _startButton: objects.Button;
+    private _helpButton: objects.Button;
     private _ocean: objects.Ocean;
 
     // constructors
@@ -27,7 +28,8 @@ namespace scenes {
         240,
         true
       );
-      this._startButton = new objects.Button("StartButton", 320, 360, true);
+      this._startButton = new objects.Button("StartButton", 320, 340, true);
+      this._helpButton = new objects.Button("HelpButton", 320, 430, true);
 
       this.Main();
     }
@@ -48,11 +50,20 @@ namespace scenes {
 
       this.addChild(this._welcomeLabel);
       this.addChild(this._startButton);
+      this.addChild(this._helpButton);
 
       this._startButton.on(
         "click",
         function() {
           managers.Game.CurrentState = config.Scene.PLAY;
+        },
+        this
+      );
+
+      this._helpButton.on(
+        "click",
+        function() {
+          managers.Game.CurrentState = config.Scene.HELP;
         },
         this
       );

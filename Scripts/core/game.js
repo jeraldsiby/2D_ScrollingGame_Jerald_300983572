@@ -12,6 +12,7 @@
         { id: "StartButton", src: "/Assets/images/StartButton.png" },
         { id: "NextButton", src: "/Assets/images/NextButton.png" },
         { id: "BackButton", src: "/Assets/images/BackButton.png" },
+        { id: "HelpButton", src: "/Assets/images/help1.png" },
         { id: "RestartButton", src: "/Assets/images/RestartButton.png" },
         { id: "plane", src: "/Assets/images/plane.png" },
         { id: "sky", src: "/Assets/images/sky.jpg" },
@@ -68,6 +69,9 @@
                 break;
             case config.Scene.END:
                 CurrentScene = new scenes.End();
+                break;
+            case config.Scene.HELP:
+                CurrentScene = new scenes.Help();
                 break;
         }
         managers.Game.CurrentScene = CurrentScene;

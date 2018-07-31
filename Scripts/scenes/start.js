@@ -23,7 +23,8 @@ var scenes;
         Start.prototype.Start = function () {
             this._ocean = new objects.Ocean();
             this._welcomeLabel = new objects.Label("Jerald 300983572", "60px", "Consolas", "#ffffff", 320, 240, true);
-            this._startButton = new objects.Button("StartButton", 320, 360, true);
+            this._startButton = new objects.Button("StartButton", 320, 340, true);
+            this._helpButton = new objects.Button("HelpButton", 320, 430, true);
             this.Main();
         };
         Start.prototype.Update = function () {
@@ -38,8 +39,12 @@ var scenes;
             this.addChild(this._ocean);
             this.addChild(this._welcomeLabel);
             this.addChild(this._startButton);
+            this.addChild(this._helpButton);
             this._startButton.on("click", function () {
                 managers.Game.CurrentState = config.Scene.PLAY;
+            }, this);
+            this._helpButton.on("click", function () {
+                managers.Game.CurrentState = config.Scene.HELP;
             }, this);
         };
         return Start;

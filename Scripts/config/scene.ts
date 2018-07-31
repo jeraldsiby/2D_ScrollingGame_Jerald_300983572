@@ -1,7 +1,8 @@
-module config {
-    export enum Scene {
-        START,
-        PLAY,
-        END
-    }
+namespace config {
+  export enum Scene {
+    START,
+    PLAY,
+    END,
+    HELP
+  }
 }
