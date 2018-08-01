@@ -98,7 +98,7 @@ namespace managers {
       );
       this.Reset();
       this._highscoreLabel = new objects.Label(
-        "High Score: 999999",
+        "Game Over",
         "60px",
         "Dock51",
         "#FFFF00",

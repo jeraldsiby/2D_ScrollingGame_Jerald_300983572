@@ -19,8 +19,8 @@
     { id: "sky", src: "/Assets/images/sky.jpg" },
     { id: "island", src: "/Assets/images/friend.png" },
     { id: "cloud", src: "/Assets/images/boss.png" },
-    { id: "yay", src: "/Assets/audio/yay.ogg" },
-    { id: "thunder", src: "/Assets/audio/thunder.ogg" },
+    { id: "yay", src: "/Assets/audio/life.wav" },
+    { id: "thunder", src: "/Assets/audio/explosion.mp3" },
     { id: "engine", src: "/Assets/audio/engine.ogg" }
   ];
 
