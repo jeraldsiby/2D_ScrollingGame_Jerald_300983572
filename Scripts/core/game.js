@@ -9,18 +9,18 @@
     var CurrentState;
     var ScoreBoard;
     var Manifest = [
-        { id: "StartButton", src: "/Assets/images/StartButton.png" },
-        { id: "NextButton", src: "/Assets/images/NextButton.png" },
-        { id: "BackButton", src: "/Assets/images/BackButton.png" },
-        { id: "HelpButton", src: "/Assets/images/help1.png" },
-        { id: "RestartButton", src: "/Assets/images/RestartButton.png" },
-        { id: "plane", src: "/Assets/images/plane.png" },
-        { id: "sky", src: "/Assets/images/sky.jpg" },
-        { id: "island", src: "/Assets/images/friend.png" },
-        { id: "cloud", src: "/Assets/images/boss.png" },
-        { id: "yay", src: "/Assets/audio/life.wav" },
-        { id: "thunder", src: "/Assets/audio/explosion.mp3" },
-        { id: "engine", src: "/Assets/audio/engine.ogg" }
+        { id: "StartButton", src: "Assets/images/StartButton.png" },
+        { id: "NextButton", src: "Assets/images/NextButton.png" },
+        { id: "BackButton", src: "Assets/images/BackButton.png" },
+        { id: "HelpButton", src: "Assets/images/help1.png" },
+        { id: "RestartButton", src: "Assets/images/RestartButton.png" },
+        { id: "plane", src: "Assets/images/plane.png" },
+        { id: "sky", src: "Assets/images/sky.jpg" },
+        { id: "island", src: "Assets/images/friend.png" },
+        { id: "cloud", src: "Assets/images/boss.png" },
+        { id: "yay", src: "Assets/audio/life.wav" },
+        { id: "thunder", src: "Assets/audio/explosion.mp3" },
+        { id: "engine", src: "Assets/audio/engine.ogg" }
     ];
     function Init() {
         console.log("%c Assets Loading...", "font-weight:bold; font-size:20px; color: green;");
