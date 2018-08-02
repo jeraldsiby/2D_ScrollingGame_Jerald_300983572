@@ -22,7 +22,7 @@
         { id: "level3", src: "Assets/images/level3.jpg" },
         { id: "Home", src: "Assets/images/Home.gif" },
         { id: "island", src: "Assets/images/friend.png" },
-        { id: "cloud", src: "Assets/images/boss.png" },
+        { id: "cloud", src: "Assets/images/boss1.png" },
         { id: "yay", src: "Assets/audio/life.wav" },
         { id: "thunder", src: "Assets/audio/explosion.mp3" },
         { id: "engine", src: "Assets/audio/engine.ogg" }
