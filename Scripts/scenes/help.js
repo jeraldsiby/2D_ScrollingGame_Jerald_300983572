@@ -33,6 +33,9 @@ var scenes;
                 "\n" +
                 "\n" +
                 "4. Shoot down the enemies to get more points." +
+                "\n" +
+                "\n" +
+                "5. Difficulty increases as level changes." +
                 "\n", "20px", "Consolas", "#ffffff", 320, 150, true);
             this._backButton = new objects.Button("BackButton", 320, 360, true);
             this.Main();

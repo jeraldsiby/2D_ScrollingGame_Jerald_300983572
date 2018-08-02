@@ -39,6 +39,9 @@ namespace scenes {
           "\n" +
           "\n" +
           "4. Shoot down the enemies to get more points." +
+          "\n" +
+          "\n" +
+          "5. Difficulty increases as level changes." +
           "\n",
         "20px",
         "Consolas",

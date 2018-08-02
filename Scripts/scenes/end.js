@@ -22,8 +22,9 @@ var scenes;
         // public methods
         End.prototype.Start = function () {
             this._ocean = new objects.Ocean();
-            this._endLabel = new objects.Label("Game Over!", "60px", "Consolas", "#000000", 320, 240, true);
-            this._backButton = new objects.Button("Home", 320, 360, true);
+            this.scoreDefined = managers.Game.Score;
+            this._endLabel = new objects.Label("High Score: " + this.scoreDefined.toString() + "\n", "40px", "Consolas", "#ffffff", 320, 300, true);
+            this._backButton = new objects.Button("Home", 320, 400, true);
             this.Main();
         };
         End.prototype.Update = function () {
@@ -37,7 +38,7 @@ var scenes;
             console.log("Starting - END SCENE");
             this.addChild(this._ocean);
             this.addChild(this._endLabel);
-            this.addChild(managers.Game.ScoreBoard.HighScoreLabel);
+            //this.addChild(managers.Game.ScoreBoard.HighScoreLabel);
             this.addChild(this._backButton);
             this._backButton.on("click", function () {
                 managers.Game.ScoreBoard.Reset();

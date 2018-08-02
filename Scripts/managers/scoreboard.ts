@@ -58,6 +58,7 @@ namespace managers {
       if (this._score > this.HighScore) {
         this.HighScore = this._score;
       }
+      managers.Game.Score = this._score;
     }
 
     get HighScore(): number {

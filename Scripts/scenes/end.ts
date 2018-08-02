@@ -4,6 +4,7 @@ namespace scenes {
     private _endLabel: objects.Label;
     private _backButton: objects.Button;
     private _ocean: objects.Ocean;
+    private scoreDefined: Number;
 
     // constructors
     constructor() {
@@ -18,16 +19,17 @@ namespace scenes {
     public Start(): void {
       this._ocean = new objects.Ocean();
 
+      this.scoreDefined = managers.Game.Score;
       this._endLabel = new objects.Label(
-        "Game Over!",
-        "60px",
+        "High Score: " + this.scoreDefined.toString() + "\n",
+        "40px",
         "Consolas",
-        "#000000",
+        "#ffffff",
         320,
-        240,
+        300,
         true
       );
-      this._backButton = new objects.Button("Home", 320, 360, true);
+      this._backButton = new objects.Button("Home", 320, 400, true);
 
       this.Main();
     }
@@ -47,7 +49,7 @@ namespace scenes {
       this.addChild(this._ocean);
       this.addChild(this._endLabel);
 
-      this.addChild(managers.Game.ScoreBoard.HighScoreLabel);
+      //this.addChild(managers.Game.ScoreBoard.HighScoreLabel);
 
       this.addChild(this._backButton);
 
