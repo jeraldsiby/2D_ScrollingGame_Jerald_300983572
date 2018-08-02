@@ -23,7 +23,7 @@ var scenes;
         End.prototype.Start = function () {
             this._ocean = new objects.Ocean();
             this._endLabel = new objects.Label("Game Over!", "60px", "Consolas", "#000000", 320, 240, true);
-            this._backButton = new objects.Button("RestartButton", 320, 360, true);
+            this._backButton = new objects.Button("Home", 320, 360, true);
             this.Main();
         };
         End.prototype.Update = function () {
@@ -41,7 +41,7 @@ var scenes;
             this.addChild(this._backButton);
             this._backButton.on("click", function () {
                 managers.Game.ScoreBoard.Reset();
-                managers.Game.CurrentState = config.Scene.PLAY;
+                managers.Game.CurrentState = config.Scene.START;
             }, this);
         };
         return End;

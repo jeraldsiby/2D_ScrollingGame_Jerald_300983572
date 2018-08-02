@@ -35,7 +35,16 @@ var scenes;
             this._island = new objects.Island();
             // creates an empty array of type Cloud
             this._clouds = new Array();
-            this._cloudNum = 3;
+            this.Level = managers.Game.Level;
+            if (this.Level == 1) {
+                this._cloudNum = 1;
+            }
+            else if (this.Level == 2) {
+                this._cloudNum = 3;
+            }
+            else if (this.Level == 3) {
+                this._cloudNum = 6;
+            }
             this._buildClouds();
             this.Main();
         };

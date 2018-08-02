@@ -14,8 +14,13 @@
         { id: "BackButton", src: "Assets/images/BackButton.png" },
         { id: "HelpButton", src: "Assets/images/help1.png" },
         { id: "RestartButton", src: "Assets/images/RestartButton.png" },
+        { id: "MainMenu", src: "Assets/images/MainMenu.png" },
         { id: "plane", src: "Assets/images/plane.png" },
         { id: "sky", src: "Assets/images/sky.jpg" },
+        { id: "level1", src: "Assets/images/level1.jpg" },
+        { id: "level2", src: "Assets/images/level2.jpg" },
+        { id: "level3", src: "Assets/images/level3.jpg" },
+        { id: "Home", src: "Assets/images/Home.gif" },
         { id: "island", src: "Assets/images/friend.png" },
         { id: "cloud", src: "Assets/images/boss.png" },
         { id: "yay", src: "Assets/audio/life.wav" },
@@ -72,6 +77,9 @@
                 break;
             case config.Scene.HELP:
                 CurrentScene = new scenes.Help();
+                break;
+            case config.Scene.MENU:
+                CurrentScene = new scenes.Menu();
                 break;
         }
         managers.Game.CurrentScene = CurrentScene;

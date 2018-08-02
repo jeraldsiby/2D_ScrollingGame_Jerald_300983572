@@ -6,6 +6,7 @@ namespace scenes {
     private _island: objects.Island;
     private _clouds: objects.Cloud[];
     private _cloudNum: number;
+    private Level: Number;
 
     public engineSound: createjs.AbstractSoundInstance;
 
@@ -36,7 +37,14 @@ namespace scenes {
 
       // creates an empty array of type Cloud
       this._clouds = new Array<objects.Cloud>();
-      this._cloudNum = 3;
+      this.Level = managers.Game.Level;
+      if (this.Level == 1) {
+        this._cloudNum = 1;
+      } else if (this.Level == 2) {
+        this._cloudNum = 3;
+      } else if (this.Level == 3) {
+        this._cloudNum = 6;
+      }
 
       this._buildClouds();
 

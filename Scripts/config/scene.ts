@@ -3,6 +3,7 @@ namespace config {
     START,
     PLAY,
     END,
-    HELP
+    HELP,
+    MENU
   }
 }

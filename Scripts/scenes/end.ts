@@ -27,7 +27,7 @@ namespace scenes {
         240,
         true
       );
-      this._backButton = new objects.Button("RestartButton", 320, 360, true);
+      this._backButton = new objects.Button("Home", 320, 360, true);
 
       this.Main();
     }
@@ -55,7 +55,7 @@ namespace scenes {
         "click",
         function() {
           managers.Game.ScoreBoard.Reset();
-          managers.Game.CurrentState = config.Scene.PLAY;
+          managers.Game.CurrentState = config.Scene.START;
         },
         this
       );
